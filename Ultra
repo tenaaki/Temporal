@@ -58,7 +58,7 @@ gui.Parent = game:GetService("CoreGui")
     local buttons = main.Buttons
 local clicking = {L = false, R = false}
  
-top.Title.Text = "TenakiHub v"..version
+top.Title.Text = "Temporal v"..version
 
 if main:FindFirstChild("PleaseUpdate") then
     main.PleaseUpdate:Destroy()
@@ -92,7 +92,7 @@ end)
 top.Minimize.MouseButton1Click:Connect(function()
     minimized = not minimized
     if minimized then
-        main.BackgroundTransparency = 1
+        main.BackgroundTransparency = 0
         buttons.Visible = false
         main.Logo.Visible = false
     else
@@ -199,11 +199,11 @@ else --Otherwise, if the function does exist, then execute this code
    
     function toggle (button)
         if button.BackgroundColor3 == Color3.new(0, 0, 0) then
-            button.BackgroundColor3 = Color3.fromRGB(124,252,0)
+            button.BackgroundColor3 = Color3.fromRGB(85, 0, 127)
             button.TextColor3 = Color3.new(0, 0, 0)
         else
             button.BackgroundColor3 = Color3.new(0, 0, 0)
-            button.TextColor3 = Color3.fromRGB(124,252,0)
+            button.TextColor3 = Color3.fromRGB(85, 0, 127)
         end
     end
    
