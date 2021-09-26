@@ -28,7 +28,7 @@ for i,v in pairs (games) do
 end
  
 --Variables
-local version = "Ultra"
+local version = ""
  
 local stopped = false
 local minimized = false
@@ -58,7 +58,7 @@ gui.Parent = game:GetService("CoreGui")
     local buttons = main.Buttons
 local clicking = {L = false, R = false}
  
-top.Title.Text = "Temporal "..version
+top.Title.Text = "Temporal Ultra"..version
 
 if main:FindFirstChild("PleaseUpdate") then
     main.PleaseUpdate:Destroy()
