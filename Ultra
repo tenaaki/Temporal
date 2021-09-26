@@ -28,7 +28,7 @@ for i,v in pairs (games) do
 end
  
 --Variables
-local version = "ltra"
+local version = "tra"
  
 local stopped = false
 local minimized = false
