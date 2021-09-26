@@ -28,18 +28,18 @@ for i,v in pairs (games) do
 end
  
 --Variables
-local version = "1.9"
+local version = "1.0"
  
 local stopped = false
 local minimized = false
  
 local _settings = {
     enabled = true,
-    ffa = false,
-    range = 150,
+    ffa = true,
+    range = 45,
     predict = true,
     showRange = true,
-    aimPart = "Head"
+    aimPart = "HumanoidRootPart"
 }
  
 local RunService = game:GetService("RunService") --Get the Run Service.
@@ -58,7 +58,7 @@ gui.Parent = game:GetService("CoreGui")
     local buttons = main.Buttons
 local clicking = {L = false, R = false}
  
-top.Title.Text = "Temporal v"..version
+top.Title.Text = "TenakiHub v"..version
 
 if main:FindFirstChild("PleaseUpdate") then
     main.PleaseUpdate:Destroy()
@@ -199,11 +199,11 @@ else --Otherwise, if the function does exist, then execute this code
    
     function toggle (button)
         if button.BackgroundColor3 == Color3.new(0, 0, 0) then
-            button.BackgroundColor3 = Color3.fromRGB(85, 0, 127)
+            button.BackgroundColor3 = Color3.fromRGB(124,252,0)
             button.TextColor3 = Color3.new(0, 0, 0)
         else
             button.BackgroundColor3 = Color3.new(0, 0, 0)
-            button.TextColor3 = Color3.fromRGB(85, 0, 127)
+            button.TextColor3 = Color3.fromRGB(124,252,0)
         end
     end
    
