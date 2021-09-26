@@ -38,7 +38,7 @@ local _settings = {
     ffa = true,
     range = 45,
     predict = true,
-    showRange = true,
+    showRange = false,
     aimPart = "HumanoidRootPart"
 }
  
@@ -97,8 +97,8 @@ top.Minimize.MouseButton1Click:Connect(function()
         main.Logo.Visible = false
     else
         main.BackgroundTransparency = 0
-        buttons.Visible = true
-        main.Logo.Visible = true
+        buttons.Visible = false
+        main.Logo.Visible = false
     end
 end)
  
