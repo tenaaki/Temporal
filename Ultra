@@ -28,18 +28,18 @@ for i,v in pairs (games) do
 end
  
 --Variables
-local version = "Ultra"
+local version = "1.9"
  
 local stopped = false
 local minimized = false
  
 local _settings = {
     enabled = true,
-    ffa = true,
-    range = 45,
+    ffa = false,
+    range = 150,
     predict = true,
-    showRange = false,
-    aimPart = "HumanoidRootPart"
+    showRange = true,
+    aimPart = "Head"
 }
  
 local RunService = game:GetService("RunService") --Get the Run Service.
