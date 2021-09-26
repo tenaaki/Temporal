@@ -1,4 +1,4 @@
---Temporal Aimbot
+--Tenaki Aimbot
 wait()
  
 --Custom Game Support
@@ -58,7 +58,7 @@ gui.Parent = game:GetService("CoreGui")
     local buttons = main.Buttons
 local clicking = {L = false, R = false}
  
-top.Title.Text = "Temporal v"..version
+top.Title.Text = "TenakiHub v"..version
 
 if main:FindFirstChild("PleaseUpdate") then
     main.PleaseUpdate:Destroy()
@@ -199,11 +199,11 @@ else --Otherwise, if the function does exist, then execute this code
    
     function toggle (button)
         if button.BackgroundColor3 == Color3.new(0, 0, 0) then
-            button.BackgroundColor3 = Color3.fromRGB(85, 0, 127)
+            button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
             button.TextColor3 = Color3.new(0, 0, 0)
         else
             button.BackgroundColor3 = Color3.new(0, 0, 0)
-            button.TextColor3 = Color3.fromRGB(85, 0, 127)
+            button.TextColor3 = Color3.fromRGB(0, 0, 0)
         end
     end
    
