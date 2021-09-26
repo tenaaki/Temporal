@@ -28,7 +28,7 @@ for i,v in pairs (games) do
 end
  
 --Variables
-local version = "tra"
+local version = "1.0"
  
 local stopped = false
 local minimized = false
@@ -58,7 +58,7 @@ gui.Parent = game:GetService("CoreGui")
     local buttons = main.Buttons
 local clicking = {L = false, R = false}
  
-top.Title.Text = "Temporal"..version
+top.Title.Text = "Temporal Ultra"..version
 
 if main:FindFirstChild("PleaseUpdate") then
     main.PleaseUpdate:Destroy()
@@ -109,7 +109,7 @@ function BB_localChr ()
             local dist = (v.Body[_settings.aimPart].Position - camera.CFrame.Position).Magnitude
             if dist < _record[1] then
                 _record[1] = dist
-                _record[2] = U
+                _record[2] = v
             end
         end
     end
