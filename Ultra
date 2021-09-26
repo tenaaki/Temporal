@@ -58,7 +58,7 @@ gui.Parent = game:GetService("CoreGui")
     local buttons = main.Buttons
 local clicking = {L = false, R = false}
  
-top.Title.Text = "TenakiHub v"..version
+top.Title.Text = "Made By Tenaki v"..version
 
 if main:FindFirstChild("PleaseUpdate") then
     main.PleaseUpdate:Destroy()
@@ -508,7 +508,7 @@ else --Otherwise, if the function does exist, then execute this code
             record = {player = nil, distance = nil}
         end
         
-        if main:FindFirstChild("Circle") then
+        if main:FindFirstChild("COCK") then
             main.Circle.Size = UDim2.new(0, _settings.range * 2, 0, _settings.range * 2)
         end
         
@@ -516,9 +516,9 @@ else --Otherwise, if the function does exist, then execute this code
             MOUSE_OFFSET = adjustOffset * ( workspace.CurrentCamera.ViewportSize / Vector2.new(2560, 1377) )
         end
 
-        if _settings.showRange and not stopped and main:FindFirstChild("Circle") then
+        if _settings.showRange and not stopped and main:FindFirstChild("COCK") then
             main.Circle.Visible = true
-        elseif not stopped and main:FindFirstChild("Circle") then
+        elseif not stopped and main:FindFirstChild("COCK") then
             main.Circle.Visible = false
         end
     end
