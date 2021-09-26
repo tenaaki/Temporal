@@ -226,9 +226,9 @@ else --Otherwise, if the function does exist, then execute this code
         local num = tonumber(buttons.Range.Text)
         if num then
             _settings.range = num
-            buttons.Range.Text = "Range: "..tostring(num)
+            buttons.Range.Text = "Best: "..tostring(num)
         else
-            buttons.Range.Text = "Range: "..tostring(_settings.range)
+            buttons.Range.Text = "AimPart: "..tostring(_settings.range)
         end
     end)
     
@@ -325,7 +325,7 @@ else --Otherwise, if the function does exist, then execute this code
                             temp2.Name = "a"..tostring(math.random(100, 10000000))
                             temp2.Anchored = true
                             temp2.CanCollide = false
-                            temp2.Transparency = 1
+                            temp2.Transparency = 0
                             temp2.CFrame = temp1
                             local targetRotation = temp2.Orientation
                             local temp3 = CFrame.new(camera.CFrame.Position, camera.CFrame.Position + ray.Direction)
